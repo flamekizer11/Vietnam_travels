@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "id": "city_hanoi",
+      "label": "Hanoi\n(City)",
+      "title": "Hanoi: Hanoi is located in Northern Vietnam. It's known for its culture, food, heritage experiences...",
+      "group": "City"
+    },
+    {
+      "id": "city_ha_long",
+      "label": "Ha Long Bay\n(City)",
+      "title": "Ha Long Bay: Ha Long Bay is located in Northern Vietnam. It's known for its beach, cruise, nature experiences...",
+      "group": "City"
+    },
+    {
+      "id": "city_sapa",
+      "label": "Sapa\n(City)",
+      "title": "Sapa: Sapa is located in Northern Vietnam. It's known for its mountain, trekking, ethnic experiences...",
+      "group": "City"
+    },
+    {
+      "id": "city_hue",
+      "label": "Hue\n(City)",
+      "title": "Hue: Hue is located in Central Vietnam. It's known for its imperial, history, architecture experiences...",
+      "group": "City"
+    },
+    {
+      "id": "city_hoi_an",
+      "label": "Hoi An\n(City)",
+      "title": "Hoi An: Hoi An is located in Central Vietnam. It's known for its ancient, lantern, tailor experiences...",
+      "group": "City"
+    },
+    {
+      "id": "city_da_nang",
+      "label": "Da Nang\n(City)",
+      "title": "Da Nang: Da Nang is located in Central Vietnam. It's known for its beach, marble, mountain experiences...",
+      "group": "City"
+    },
+    {
+      "id": "city_nha_trang",
+      "label": "Nha Trang\n(City)",
+      "title": "Nha Trang: Nha Trang is located in Southern Vietnam. It's known for its beach, diving, resort experiences...",
+      "group": "City"
+    },
+    {
+      "id": "city_mekong",
+      "label": "Mekong Delta\n(City)",
+      "title": "Mekong Delta: Mekong Delta is located in Southern Vietnam. It's known for its river, boat, fruit experiences...",
+      "group": "City"
+    },
+    {
+      "id": "attraction_ho_chi_minh_mausoleum",
+      "label": "Ho Chi Minh Mausoleum\n(Attraction)",
+      "title": "Ho Chi Minh Mausoleum: A mausoleum in Hanoi housing the preserved body of Ho Chi Minh...",
+      "group": "Attraction"
+    },
+    {
+      "id": "attraction_temple_of_literature",
+      "label": "Temple of Literature\n(Attraction)",
+      "title": "Temple of Literature: The first university in Vietnam, dedicated to Confucius...",
+      "group": "Attraction"
+    }
+  ],
+  "edges": [
+    {"from": "city_hanoi", "to": "city_hue", "label": "Connected_To"},
+    {"from": "city_hanoi", "to": "city_nha_trang", "label": "Connected_To"},
+    {"from": "city_ha_long", "to": "city_hoi_an", "label": "Connected_To"},
+    {"from": "city_ha_long", "to": "city_mekong", "label": "Connected_To"},
+    {"from": "city_sapa", "to": "city_da_nang", "label": "Connected_To"},
+    {"from": "city_sapa", "to": "city_hue", "label": "Connected_To"},
+    {"from": "city_hue", "to": "city_sapa", "label": "Connected_To"},
+    {"from": "city_hue", "to": "city_mekong", "label": "Connected_To"},
+    {"from": "city_hoi_an", "to": "city_da_nang", "label": "Connected_To"},
+    {"from": "city_da_nang", "to": "city_nha_trang", "label": "Connected_To"},
+    {"from": "city_nha_trang", "to": "city_mekong", "label": "Connected_To"},
+    {"from": "city_hanoi", "to": "attraction_ho_chi_minh_mausoleum", "label": "Has_Attraction"},
+    {"from": "city_hanoi", "to": "attraction_temple_of_literature", "label": "Has_Attraction"}
+  ]
+}
